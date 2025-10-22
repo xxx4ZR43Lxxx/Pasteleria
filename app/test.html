@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Organizado</title>
+    <style>
+        /* Reset de márgenes y padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #004080;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            font-size: 1.5rem;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            flex: 1;
+            padding: 2rem;
+        }
+
+        .card {
+            background-color: #fff;
+            width: 300px;
+            margin: 1rem;
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: #004080;
+            color: #fff;
+            text-align: center;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Título del Proyecto</h1>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Imagen 1">
+            <h3>Elemento 1</h3>
+            <p>Descripción breve del elemento 1.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Imagen 2">
+            <h3>Elemento 2</h3>
+            <p>Descripción breve del elemento 2.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Imagen 3">
+            <h3>Elemento 3</h3>
+            <p>Descripción breve del elemento 3.</p>
+        </div>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Tu Proyecto</p>
+    </footer>
+</body>
+</html>
